@@ -1,10 +1,7 @@
 #include <iostream>
 
-
 int binary_search(int arr[], int key, int size) {
     int start = 0, end = size-1, mid = end/2;
-   
-
     while (start <= end) {
         
         if (arr[mid] == key) {
@@ -16,17 +13,13 @@ int binary_search(int arr[], int key, int size) {
         else if (arr[mid] < key) {
             start = mid + 1;
         }
-
         mid = (end + start) / 2;
-    
     }
-
     return -1;
 }
 
 int binary_search_recursive(int arr[], int key, int start, int end) {
     int mid = (start + end) / 2;
-
         if (start > end) {
             return -1;
         }
