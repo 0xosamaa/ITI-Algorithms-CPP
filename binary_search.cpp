@@ -52,16 +52,12 @@ int binary_search_string(std::string arr[], std::string key, int n) {
 
 int main()
 {
-
     int numbers[6] = {1,2,3,4,5,6};
-
     std::cout<<binary_search(numbers, 4, 6)<<std::endl;
     std::cout << binary_search_recursive(numbers, 6, 0, 6)<<std::endl;
 
     std::string words[] = { "abc", "def", "hij" , "klm" , "nope" };
     std::string key = "abc";
     int result = binary_search_string(words, key, 5);
-    
     std::cout << result<< std::endl;
-    
 }
